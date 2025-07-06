@@ -1,0 +1,47 @@
+{
+  "version": 2,
+  "settings": {
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1200px"
+    },
+    "color": {
+      "palette": [
+        {
+          "name": "Noir",
+          "slug": "noir",
+          "color": "#000000"
+        },
+        {
+          "name": "Blanc",
+          "slug": "blanc",
+          "color": "#ffffff"
+        }
+      ]
+    },
+    "typography": {
+      "fontSizes": [
+        {
+          "slug": "normal",
+          "size": "16px",
+          "name": "Normal"
+        },
+        {
+          "slug": "large",
+          "size": "32px",
+          "name": "Large"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "elements": {
+      "body": {
+        "color": {
+          "text": "#000000",
+          "background": "#ffffff"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,91 @@
+/*
+ Theme Name:   main-theme
+ Description:  Thème insideBiM
+ Author:       Baptiste Revert
+ Version:      1.0.0
+*/
+
+
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+.header-nav {
+  width: 60vw;
+  height: 8vh;
+}
+
+.block-partners-contacts {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  width: 60vw;
+}
+
+.block-contacts-icons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15vw !important;
+  max-width: 100%;
+}
+
+.block-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10vw;
+  height: 7vh;
+}
+
+.title-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colonnes-pleine-largeur {
+  display: flex;
+  width: 60vw;
+}
+
+.is-style-fill {
+  background-color: none;
+}
+
+.block-processus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3vh 0;
+}
+
+.steps-container {
+  display: flex;
+}
+
+.block-testimonials-cards {
+  display: block;
+}
+
+.call-to-action-services {
+  display: flex;
+  flex-direction: column;
+  height: 35vh;
+  justify-content: end;
+}
+
+/* SERViCES */
+
+.block-services-steps-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.block-why-us {
+  display: flex;
+}

@@ -1,0 +1,25 @@
+:root {
+  /* Couleurs */
+  --color-primary: #1e40af;
+  --color-secondary: #64748b;
+  --color-accent: #f59e0b;
+  --color-bg: #ffffff;
+  --color-text: #111827;
+
+  /* Polices */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+
+  /* Tailles */
+  --font-size-base: 1rem;
+  --font-size-lg: 1.25rem;
+  --font-size-xl: 2rem;
+
+  /* Espacement */
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  /* Rayons */
+  --radius: 8px;
+}
