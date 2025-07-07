@@ -1,35 +1,27 @@
-<!-- wp:media-text {"className":"hero","mediaPosition":"right"} -->
-<div class="wp-block-group hero">
+<!-- wp:columns {"className":"hero"} -->
+<div class="wp-block-columns"><!-- wp:column -->
+<div class="wp-block-column"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">Bienvenue sur la première page</h1>
+<!-- /wp:heading -->
 
-    <div class="wp-block-media-text__content">
+<!-- wp:paragraph {"placeholder":"Content…"} -->
+<p>Description de la première page</p>
+<!-- /wp:paragraph -->
 
-        <!-- wp:heading {"level":1} -->
-        <h1 class="wp-block-heading"></h1>
-        <!-- /wp:heading -->
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"></a></div>
+<!-- /wp:button -->
 
-        <!-- wp:paragraph {"placeholder":"Content…"} -->
-        <p></p>
-        <!-- /wp:paragraph -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button"></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
+<!-- /wp:column -->
 
-        <!-- wp:buttons -->
-            <div class="wp-block-buttons">
-            <!-- wp:button -->
-            <div class="wp-block-button">
-                <a class="wp-block-button__link wp-element-button"></a>
-            </div>
-            <!-- /wp:button -->
-
-            <!-- wp:button -->
-            <div class="wp-block-button">
-                <a class="wp-block-button__link wp-element-button"></a>
-            </div>
-            <!-- /wp:button -->
-            </div>
-        <!-- /wp:buttons -->
-
-    </div>
-
-    <figure class="wp-block-media-text__media"></figure>
-
-</div>
-<!-- /wp:media-text -->
+<!-- wp:column -->
+<div class="wp-block-column"><!-- wp:image -->
+<figure class="wp-block-image"><img alt=""/></figure>
+<!-- /wp:image --></div>
+<!-- /wp:column --></div>
+<!-- /wp:columns -->

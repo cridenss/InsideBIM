@@ -70,5 +70,29 @@ function mon_theme_register_patterns() {
         )
     );
 
+    register_block_pattern(
+        'main-theme/steps', 
+        array(
+            'title'       => __( 'Steps', 'main-theme' ),
+            'content'     => file_get_contents( get_template_directory() . '/patterns/steps.php' ),
+        )
+    );
+
+    register_block_pattern(
+        'main-theme/steps-services', 
+        array(
+            'title'       => __( 'Steps Services', 'main-theme' ),
+            'content'     => file_get_contents( get_template_directory() . '/patterns/steps-services.php' ),
+        )
+    );
+
+    register_block_pattern(
+        'main-theme/why-us', 
+        array(
+            'title'       => __( 'Why Us', 'main-theme' ),
+            'content'     => file_get_contents( get_template_directory() . '/patterns/why-us.php' ),
+        )
+    );
+
 }
 add_action( 'init', 'mon_theme_register_patterns' );
