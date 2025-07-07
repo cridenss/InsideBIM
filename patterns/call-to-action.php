@@ -1,10 +1,4 @@
-<?php
-/**
- * Call To Action
- */
-?>
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
+<!-- wp:group {"className":"call-to-action","layout":{"type":"constrained"}} -->
 <div class="wp-block-group call-to-action">
 
     <!-- wp:heading -->

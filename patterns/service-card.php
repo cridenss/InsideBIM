@@ -1,9 +1,3 @@
-<?php
-/**
- * Service Card Pattern
- */
-?>
-
 <!-- wp:group {"className":"service-card","layout":{"type":"constrained"}} -->
 <div class="wp-block-group service-card">
     

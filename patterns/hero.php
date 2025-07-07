@@ -1,10 +1,4 @@
-<?php
-/**
- *  Hero Pattern
- */
-?>
-
-<!-- wp:media-text {"mediaPosition":"right"} -->
+<!-- wp:media-text {"className":"hero","mediaPosition":"right"} -->
 <div class="wp-block-group hero">
 
     <div class="wp-block-media-text__content">

@@ -1,10 +1,4 @@
-<?php
-/**
- * Testimonials Pattern
- */
-?>
-
-<!-- wp:group {"layout":{"type":"constrained"}} -->
+<!-- wp:group {"className":"testimonials","layout":{"type":"constrained"}} -->
 <div class="wp-block-group testimonials">
     
     <!-- wp:paragraph -->

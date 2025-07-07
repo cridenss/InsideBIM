@@ -1,10 +1,4 @@
-<?php
-/**
- * Media and CTA
- */
-?>
-
-<!-- wp:media-text -->
+<!-- wp:media-text {"className":"call-to-action"}-->
 <div class="wp-block-group media-and-cta">
     <figure class="wp-block-media-text__media"></figure>
     <div class="wp-block-media-text__content">
