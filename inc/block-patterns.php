@@ -1,98 +1,156 @@
 <?php
 
 
-function mon_theme_register_pattern_categories() {
-    
-    register_block_pattern_category('main-theme-headers', [
-        'label' => __('Headers', 'main-theme'),
+function mon_theme_register_pattern_categories()
+{
+
+    register_block_pattern_category('main-theme-commun', [
+        'label' => __('Communs', 'main-theme'),
     ]);
+
+    // HERO //
+
+    register_block_pattern_category('main-theme-accueil', [
+        'label' => __('Accueil', 'main-theme'),
+    ]);
+
+    // SERViCES //
 
     register_block_pattern_category('main-theme-services', [
         'label' => __('Services', 'main-theme'),
     ]);
 
-        register_block_pattern_category('main-theme-hero', [
-        'label' => __('Services', 'main-theme'),
+    // PORTFOLiO //
+
+    register_block_pattern_category('main-theme-portfolio', [
+        'label' => __('Portfolio', 'main-theme'),
+    ]);
+
+    // ACTUALiTES //
+
+    register_block_pattern_category('main-theme-actualites', [
+        'label' => __('Actualités', 'main-theme'),
+    ]);
+
+    // CONTACT //
+
+    register_block_pattern_category('main-theme-contact', [
+        'label' => __('Contact', 'main-theme'),
     ]);
 }
+
+
 add_action('init', 'mon_theme_register_pattern_categories');
 
-function mon_theme_register_patterns() {
+function mon_theme_register_patterns()
+{
 
     register_block_pattern(
-        'main-theme/service-card', 
+        'main-theme/service-card',
         array(
-            'title'       => __( 'Service Card', 'main-theme' ),
-            'description' => _x( 'Une carte service avec icône, titre, description et lien.', 'Block pattern description', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/service-card.php' ),
-            'categories'  => array( 'main-theme-services' ), 
+            'title'       => __('Service Card', 'main-theme'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/accueil/service-card.php'),
+            'categories'  => array('main-theme-accueil'),
         )
     );
 
     register_block_pattern(
-        'main-theme/hero', 
+        'main-theme/hero',
         array(
-            'title'       => __( 'Hero', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/hero.php' ),
-            'categories'  => array( 'main-theme-hero' ), 
+            'title'       => __('Hero', 'main-theme'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/accueil/hero.php'),
+            'categories'  => array('main-theme-accueil'),
         )
     );
 
     register_block_pattern(
-        'main-theme/call-to-action', 
+        'main-theme/call-to-action',
         array(
-            'title'       => __( 'Call to action', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/call-to-action.php' ),
+            'title'       => __('Call to action', 'main-theme'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/commun/call-to-action.php'),
+            'categories'  => array('main-theme-commun')
         )
     );
 
     register_block_pattern(
-        'main-theme/testimonials', 
+        'main-theme/buttons',
         array(
-            'title'       => __( 'Testimonials', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/testimonials.php' ),
+            'title'       => __('Buttons', 'main-theme'),
+            'categories'  => array('main-theme-commun'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/commun/buttons.php'),
         )
     );
 
     register_block_pattern(
-        'main-theme/option-card', 
+        'main-theme/banner',
         array(
-            'title'       => __( 'Option Card', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/option-card.php' ),
+            'title'       => __('Banner', 'main-theme'),
+            'categories'  => array('main-theme-commun'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/commun/banner.php'),
         )
     );
 
     register_block_pattern(
-        'main-theme/media-and-cta', 
+        'main-theme/testimonials',
         array(
-            'title'       => __( 'Media & Call To Action', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/media-and-cta.php' ),
+            'title'       => __('Testimonials', 'main-theme'),
+            'categories'  => array('main-theme-accueil'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/accueil/testimonials.php'),
         )
     );
 
     register_block_pattern(
-        'main-theme/steps', 
+        'main-theme/option-card',
         array(
-            'title'       => __( 'Steps', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/steps.php' ),
+            'title'       => __('Option Card', 'main-theme-services'),
+            'categories'  => array('main-theme-services'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/services/option-card.php'),
         )
     );
 
     register_block_pattern(
-        'main-theme/steps-services', 
+        'main-theme/steps',
         array(
-            'title'       => __( 'Steps Services', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/steps-services.php' ),
+            'title'       => __('Steps', 'main-theme'),
+            'categories'  => array('main-theme-services'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/services/steps.php'),
         )
     );
 
     register_block_pattern(
-        'main-theme/why-us', 
+        'main-theme/commitment',
         array(
-            'title'       => __( 'Why Us', 'main-theme' ),
-            'content'     => file_get_contents( get_template_directory() . '/patterns/why-us.php' ),
+            'title'       => __('Modalités', 'main-theme'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/services/commitment.php'),
+            'categories'  => array('main-theme-services'),
         )
     );
 
+    register_block_pattern(
+        'main-theme/why-us',
+        array(
+            'title'       => __('Notre Mission', 'main-theme'),
+            'categories'  => array('main-theme-accueil'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/accueil/why-us.php'),
+        )
+    );
+
+    register_block_pattern(
+        'main-theme/project-card',
+        array(
+            'title'       => __('Project card', 'main-theme'),
+            'categories'  => array('main-theme-portfolio'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/portfolio/project-card.php'),
+        )
+    );
+
+    register_block_pattern(
+        'main-theme/article',
+        array(
+            'title'       => __('Carte article', 'main-theme'),
+            'categories'  => array('main-theme-actualites'),
+            'content'     => file_get_contents(get_template_directory() . '/patterns/actualites/article.php'),
+        )
+    );
 }
-add_action( 'init', 'mon_theme_register_patterns' );
+add_action('init', 'mon_theme_register_patterns');

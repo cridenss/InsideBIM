@@ -1,20 +1,20 @@
 <!-- wp:group {"className":"service-card","layout":{"type":"constrained"}} -->
 <div class="wp-block-group service-card">
-    
+
     <!-- wp:image -->
-    <figure class="wp-block-image"><img alt=""/></figure>
+    <figure class="wp-block-image"><img alt="" /></figure>
     <!-- /wp:image -->
 
     <!-- wp:heading -->
-    <h2 class="wp-block-heading"></h2>
+    <h2 class="wp-block-heading">Titre du service</h2>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->
-    <p></p>
+    <p>Description du service</p>
     <!-- /wp:paragraph -->
 
     <!-- wp:paragraph -->
-    <p><a href=""></a></p>
+    <p><a href="">Lien</a></p>
     <!-- /wp:paragraph -->
 
 </div>

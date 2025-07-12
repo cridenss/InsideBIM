@@ -23,8 +23,16 @@ Thème WordPress basé sur Full Site Editing (FSE) avec des block patterns perso
 - Palette définie dans `theme.json` + `variables.css`
 - Styles des patterns centralisés dans `patterns.css`
 
-  )
-);
+## Catégories pattern
+
+🏠 Header & Navigation
+📄 Hero Sections  
+🔧 Services & Features
+📊 Portfolio & Projects
+👥 About & Team
+📞 Contact & CTA
+📰 Blog & Content
+🦶 Footer
 
 
 
