@@ -6,7 +6,7 @@
     <!-- /wp:image -->
 
     <!-- wp:heading -->
-    <h2 class="wp-block-heading">Titre du service</h2>
+    <h3 class="wp-block-heading">Titre du service</h3>
     <!-- /wp:heading -->
 
     <!-- wp:paragraph -->

@@ -1,0 +1,30 @@
+.buttons a {
+    border-radius: var(--radius-button);
+    padding: 10px 20px;
+    
+}
+
+.header-nav_button a{
+    padding: 10px 20px;
+}
+
+
+.buttons a,
+.header-nav_button a{
+    background-color: var(--dark-green);
+    color: var(--light-green_hover);
+}
+
+.header-nav_button a:hover{
+    background-color: var(--light-green_hover);
+    color: var(--dark-green);
+    transition: ease-in-out 0.3s;
+
+}
+
+.buttons a:hover{
+    background-color: var(--light-green_hover);
+    color: var(--dark-green);
+    transition: ease-in-out 0.3s;
+}
+

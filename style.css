@@ -5,20 +5,65 @@
  Version:      1.0.0
 */
 
-@import url('./assets/css/variables.css');
-@import url('./assets/css/patterns.css');
-@import url('./assets/css/parts.css');
-@import url('./assets/css/global.css');
+@import url('https://fonts.googleapis.com/css2?family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
+@import url('./assets/css/base/reset.css');
+@import url('./assets/css/base/typography.css');
+@import url('./assets/css/base/variables.css');
+
+@import url('./assets/css/components/buttons.css');
+@import url('./assets/css/components/cards.css');
+@import url('./assets/css/components/cta.css');
+@import url('./assets/css/components/navigation.css');
+
+@import url('./assets/css/layout/footer.css');
+@import url('./assets/css/layout/grid.css');
+@import url('./assets/css/layout/header.css');
+
+@import url('./assets/css/pages/accueil.css');
+@import url('./assets/css/pages/actualites.css');
+@import url('./assets/css/pages/contact.css');
+@import url('./assets/css/pages/realisations.css');
+@import url('./assets/css/pages/services.css');
 
 
 
-@import url('./pages/accueil.css');
-@import url('./pages/actualites.css');
-@import url('./pages/contact.css');
-@import url('./pages/realisations.css');
-@import url('./pages/services.css');
+/* Cunia */
+@font-face {
+    font-family: 'Cunia';
+    src: url('/wp-content/themes/main-theme/assets/fonts/Cunia.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
 
+/* Lato Light */
+@font-face {
+    font-family: 'Lato';
+    src: url('/wp-content/themes/main-theme/assets/fonts/Lato-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+  }
 
+/* Lato Regular */
+@font-face {
+    font-family: 'Lato';
+    src: url('/wp-content/themes/main-theme/assets/fonts/Lato-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
 
+/* Lato Bold */
+@font-face {
+    font-family: 'Lato';
+    src: url('/wp-content/themes/main-theme/assets/fonts/Lato-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
 
-
+/* Lato Black */
+@font-face {
+    font-family: 'Lato';
+    src: url('/wp-content/themes/main-theme/assets/fonts/Lato-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

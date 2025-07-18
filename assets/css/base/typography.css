@@ -1,0 +1,85 @@
+
+.buttons a, .header-nav a, .header-nav_button a{
+    font-family: var(--font-tiktok);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    color: var(--dark-green);
+}
+
+.buttons a, .header-service_menu{
+    font-family: var(--font-tiktok);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    color: var(--cream);
+}
+
+.banner-title, h1{
+    font-size: 2.5rem;
+    line-height: 1;
+}
+
+h2{
+    width: fit-content;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 2rem;
+}
+
+/* h2::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background-color: var(--orange);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+} */
+
+
+
+h1, h2 {
+    font-family: var(--font-cunia);
+    text-transform: uppercase;
+    color: var(--dark-green);
+}
+
+p, a, h3 {
+    font-family: var(--font-tiktok);
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    color: var(--dark-green);
+    font-weight: 500;
+
+}
+
+.service-card p, .testimonial-card p{
+    color: var(--dark-green);
+    font-weight: 200;
+
+}
+
+.service-card a{
+    font-weight: 600;
+    color: var(--dark-green);
+
+}
+
+p {
+    color: var(--dark-green);
+}
+
+a {
+    text-decoration: none;
+}
+
+.cta-content h2, .cta-content p {
+    color: var(--cream) !important;
+}
+

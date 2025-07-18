@@ -1,0 +1,50 @@
+.banner{
+    border-radius: 0 0 var(--radius-banner) var(--radius-banner);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-green);
+}
+
+.banner-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: var(--max-width);
+    gap: 20vw;
+
+}
+
+.banner-title{
+    color: var(--light-green_hover);
+    margin: 0;
+}
+
+.banner-text{
+    color: var(--light-green_hover);
+}
+
+.banner-container_content{
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+
+.options h2{
+    margin: 0 auto;
+}
+
+.options-container{
+    display: flex ;
+    justify-content: space-between;
+}
+
+
+.modality-container{
+    display: flex;
+}
+
+.steps-container{
+    display: flex;
+}

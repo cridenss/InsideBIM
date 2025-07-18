@@ -1,0 +1,74 @@
+/* SERVICE CARDS */
+.service-card {
+  background-color: var(--light-green);
+  border-radius: var(--radius);
+  padding: var(--padding-cards);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: var(--gap-cards);
+  min-height: var(--cards-s);
+}
+
+.service-card:hover {
+  background-color: var(--light-green_hover);
+  transition: ease 0.3s;
+}
+
+.icon-container {
+  width: 50px;
+  height: 50px;
+  background-color: var(--dark-green);
+  border-radius: 100px;
+}
+
+.service-card img {
+}
+
+/* TESTIMONIAL CARDS */
+.testimonial {
+}
+
+.testimonial-card {
+  background-color: var(--light-grey);
+  border-radius: var(--radius);
+  padding: var(--padding-cards);
+  min-height: var(--cards-s);
+  gap: 2vh;
+}
+
+.testimonial-card_row {
+  display: flex;
+  padding-top: 2vh;
+}
+
+/* OPTiON CARDS */
+
+.options-container{
+    gap: var(--spacing-md);
+}
+
+.option-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--orange);
+    border-radius: var(--radius);
+    padding: var(--padding-cards);
+    min-height: var(--cards-s);
+    min-width: 33.3%;
+    gap: 2vh;
+}
+
+/* MODALiTY CARDS */
+
+.modality-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-green);
+    border-radius: var(--radius);
+    padding: var(--padding-cards);
+    min-height: var(--cards-s);
+    gap: 2vh;
+}

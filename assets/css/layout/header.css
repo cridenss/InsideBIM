@@ -1,0 +1,45 @@
+/* ACCUEiL */
+
+header {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    width: 100vw;
+    height: 8vh;
+    z-index: 1000;
+    padding: 0 5vw;
+    background: rgba(250, 247, 239, 0.8); 
+    backdrop-filter: blur(10px); 
+    /* background-color: var(--cream);
+    opacity: 0.8; */
+}
+
+.header-nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-green);
+    border-radius: 0 !important;
+
+    
+    /* z-index: 1000; */
+    /* position: relative; */
+    /* top: 10px; */
+    /* width: 70vw; */
+
+}
+
+.header-nav_menu{
+    gap: 4vw;
+}
+
+.header-nav_services{
+}
+
+.header-nav_logo{
+}
+
+/* SERViCES */
+
+
