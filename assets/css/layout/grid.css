@@ -6,39 +6,3 @@ body {
   max-width: var(--max-width);
   margin: 0 auto;
 }
-
-/* ACCUEIL */
-
-.hero {
-  height: var(--section-xl);
-}
-
-.partners {
-  height: 5vh;
-}
-
-.service {
-  padding: var(--section-padding-l);
-}
-
-.section-engagement {
-  height: 70vh;
-  padding: var(--section-padding-l);
-  width: 100vw;
-}
-
-.testimonial {
-  padding: var(--section-padding-l);
-}
-
-.cta {
-  padding-top: 10vh;
-  padding-bottom: 14vh;
-}
-
-/* SERViCES */
-
-.banner{
-    height: var(--section-l);
-    width: 100vw;
-}

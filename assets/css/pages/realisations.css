@@ -1,0 +1,126 @@
+.projects{
+    width: var(--max-width);
+    margin: 40px auto;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.project-card-container {
+    position: relative;
+}
+
+
+.project-card{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    min-width: 40%;
+    border-radius: 10px;
+    padding: var(--padding-cards);
+    height: 45vh;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out !important;
+    position: relative !important;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.project-card.expanded {
+    height: auto !important;
+    min-height: 45vh !important;
+    max-height: 150vh;
+    overflow: visible !important;
+}
+
+.project-card_image{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project-card_image img{
+    width: 50%;
+}
+
+.project-card_description{
+
+}
+
+.project-card_description h4{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: black;
+    padding: 2vh 0 0 0;
+}
+
+.project-card_description p{
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: 200;
+    padding: 2vh 0 2vh 0;
+    text-align: justify;
+
+}
+
+
+.project-card_items{
+    display: grid;
+    grid-template-columns: 1fr 90%;
+    align-items: center;
+}
+
+.project-card_items_description{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+}
+
+
+.wp-block-buttons.expand-button {
+    margin: 0 !important;
+}
+
+/* Le bouton lui-même */
+.expand-button .wp-block-button {
+    margin: 0 !important;
+    position: absolute !important;
+    left: auto !important;
+    top: 95%;
+    z-index: 10;
+}
+
+/* Le lien du bouton (l'élément principal à styler) */
+.expand-button .wp-block-button__link {
+    
+    /* Dimensions égales = cercle parfait */
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    border: solid 2px white;
+    background-color: var(--green);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+
+
+    
+    /* Centrer le texte */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    
+    /* Reset des styles par défaut WordPress */
+    padding: 0 !important;
+    min-width: auto !important;
+    line-height: 1 !important;
+    
+    /* Style du texte */
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    color: white;
+    
+    /* Transition fluide */
+    transition: all 0.3s ease !important;
+}

@@ -1,0 +1,43 @@
+.articles{
+    width: var(--max-width);
+    margin: 5vh auto;
+    display: grid;
+    align-items: start;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+}
+
+.article-card{
+    display: flex;
+    flex-direction: column;
+    gap: 3vh;
+    background-color: white;
+    min-width: 40%;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
+    height: 60vh;
+}
+
+.article-card figure{
+    display: flex;
+    height: 60%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+
+.article-card figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garde les proportions, peut rogner */
+}
+
+
+.article-card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: justify;
+    gap: 2vh;
+    height: 40%;
+    padding: 0 2vw 0 2vw;
+}

@@ -1,45 +1,54 @@
-/* ACCUEiL */
-
-header {
+.home header {
     display: flex;
     justify-content: center;
-    position: fixed;
-    width: 100vw;
-    height: 8vh;
-    z-index: 1000;
-    padding: 0 5vw;
-    background: rgba(250, 247, 239, 0.8); 
-    backdrop-filter: blur(10px); 
-    /* background-color: var(--cream);
-    opacity: 0.8; */
+    align-items: center;
+    margin: 0 auto;
+    width: 98vw;
+    height: 10vh;
+    z-index: 100;
+    /* background-color: var(--dark-green) !important; */
+    border-radius: 5px 5px 0 0 !important;
+    margin-top: 2vh;
+
+}
+
+.home .header-nav-menu{
+    gap: 4vw;
+    font-family: var(--font-tiktok);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: black;
+
 }
 
 .header-nav {
     display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--dark-green);
-    border-radius: 0 !important;
-
-    
-    /* z-index: 1000; */
-    /* position: relative; */
-    /* top: 10px; */
-    /* width: 70vw; */
-
+    width: 70vw;
+    justify-content: space-between !important;
+    align-items: center !important;
 }
 
-.header-nav_menu{
+.header-nav-menu{
     gap: 4vw;
+    font-family: var(--font-tiktok);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--cream);
+
 }
 
-.header-nav_services{
+.page header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 98vw;
+    height: 10vh;
+    z-index: 100;
+    border-radius: 5px 5px 0 0;
+    margin-top: 2vh;
+    background-color: none;
+
+
+
 }
-
-.header-nav_logo{
-}
-
-/* SERViCES */
-
-

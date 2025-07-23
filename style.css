@@ -11,7 +11,7 @@
 @import url('./assets/css/base/typography.css');
 @import url('./assets/css/base/variables.css');
 
-@import url('./assets/css/components/buttons.css');
+@import url('./assets/css/components/shared.css');
 @import url('./assets/css/components/cards.css');
 @import url('./assets/css/components/cta.css');
 @import url('./assets/css/components/navigation.css');

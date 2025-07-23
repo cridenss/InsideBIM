@@ -1,0 +1,52 @@
+.buttons a {
+    border-radius: var(--radius-button);
+    padding: 10px 20px;
+    background-color: #E8EACC;
+    color: var(--dark-green);
+    font-family: var(--font-tiktok);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+    
+}
+
+.buttons a:hover{
+    background-color: var(--dark-green);
+    color: var(--light-green);
+    transition: ease-in-out 0.3s;
+}
+
+.header-nav_button a{
+    border-radius: var(--radius-button);
+    padding: 10px 20px;
+    background-color: var(--green);
+    color: var(--dark-green);
+    font-family: var(--font-tiktok);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+}
+
+.header-nav_button a:hover{
+    background-color: var(--dark-green);
+    color: var(--light-green);
+    transition: ease-in-out 0.3s;
+
+}
+
+.dark-buttons a{
+    border-radius: var(--radius-button);
+    padding: 10px 20px;
+    background-color: var(--dark-green);
+    color: var(--cream);
+    font-family: var(--font-tiktok);
+    font-size: var(--font-size-s);
+    font-weight: 500;
+}
+
+.dark-buttons a:hover{
+    background-color: var(--green);
+    color: var(--dark-green);
+    transition: ease-in-out 0.3s;
+}
+
+
+
