@@ -1,0 +1,30 @@
+.partners {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 10vh;
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+
+}
+
+.partners-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70vw;
+  background-color: var(--cream);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: -4vh;
+  height: 100%;
+  
+
+}
+
+.partner-image {
+  width: 70px;
+  height: auto;
+}

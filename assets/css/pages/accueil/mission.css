@@ -1,0 +1,42 @@
+.section-engagement {
+  display: flex;
+  margin: 0 auto 140px auto;
+  background-color: var(--dark-green);
+  width: 100vw;
+  padding: 140px 0;
+}
+
+.engagement-container {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-cards);
+  width: 70vw;
+}
+
+.engagement-media {
+  width: 50%;
+}
+
+.engagement-content {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: var(--gap-cards);
+}
+
+.engagement-content h2 {
+  text-align: justify;
+}
+
+.engagement-content p {
+  text-align: justify;
+  color: var(--cream);
+}
+
+.engagement-content-keywords {
+  text-transform: uppercase;
+  font-family: var(--font-lato);
+  font-weight: 700;
+  color: var(--light-green_hover) !important;
+
+}

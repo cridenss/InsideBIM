@@ -1,0 +1,38 @@
+.section-banner{
+  background-color: var(--dark-green);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  align-items: center;
+  justify-content: center !important;
+  padding-bottom: 10vh;
+}
+
+.banner-media {
+  margin-bottom: 20px;
+
+}
+
+.banner-media img{
+  width: 150px;
+}
+
+.banner-text {
+  color: var(--cream);
+  text-align: justify;
+  font-weight: 100;
+  width: 575px;
+}
+
+.banner-title{
+  color: var(--cream);
+  margin-bottom: 20px;
+
+}

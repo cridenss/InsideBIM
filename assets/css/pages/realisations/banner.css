@@ -1,0 +1,23 @@
+.banner-container-realisations {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  align-items: center;
+  justify-content: center !important;
+  padding-bottom: 10vh;
+}
+
+.banner-text-realisations {
+  color: var(--cream);
+  text-align: justify;
+  font-weight: 100;
+  width: 575px;
+    margin-bottom: 30px;
+
+}
+
+.banner-title-realisations{
+  color: var(--cream);
+  margin-bottom: 20px;
+
+}

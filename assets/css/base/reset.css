@@ -2,16 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 
 html {
     font-size: 16px;
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
 }
 
 body {
     font-family: inherit;
     color: inherit;
+        -webkit-overflow-scrolling: touch;
+    /* Optimise le rendu pendant le scroll */
+    transform: translateZ(0);
+    will-change: scroll-position;
+    background-color: red;
 }
 
 img {

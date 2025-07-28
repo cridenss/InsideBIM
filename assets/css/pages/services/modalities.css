@@ -1,0 +1,26 @@
+.engagements{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  position: relative;
+  top: -20px;
+  height: 20vh;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+.engagement-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: var(--cream);
+  border-radius: 10px;
+  box-shadow: var(--shadow-header);
+  padding: var(--padding-cards);
+  width: 20vw;
+}
+
+.engagement-card img{
+  width: 50px;
+}

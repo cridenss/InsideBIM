@@ -1,0 +1,24 @@
+.cta {
+  width: 70vw;
+  margin: 40px auto 120px auto;
+}
+
+.cta-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--container-padding);
+    background-color: var(--light-grey);
+    border-radius: var(--radius-banner);
+}
+
+.cta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--gap-cards-l);
+}
+
+.cta-content h2, .cta-content p {
+    color: var(--dark-green) !important;
+}

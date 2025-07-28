@@ -1,12 +1,10 @@
 footer {
-    height: 30vh;
-    width: 98vw;
+    height: 20vh;
+    width: 100vw;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    background-color:var(--dark-green-lighter);
-    border-radius: var(--radius-banner);
-    margin-bottom: 2vh ;
+    background-color:var(--dark-green);
 }
 
 .footer-container h2{

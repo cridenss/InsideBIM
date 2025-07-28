@@ -1,0 +1,27 @@
+.testimonial {
+  display: flex;
+  margin: 120px auto 0 auto;
+}
+
+.testimonial-container {
+  display: flex;
+  gap: var(--gap-cards);
+  width: 80%;
+}
+
+.testimonial-container h2{
+  width: 20%;
+}
+
+.testimonial-card {
+  background-color: var(--light-grey);
+  border-radius: var(--radius);
+  padding: var(--padding-cards);
+  min-height: var(--cards-s);
+  gap: 2vh;
+}
+
+.testimonial-card_row {
+  display: flex;
+  padding-top: 2vh;
+}
