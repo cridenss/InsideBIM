@@ -1,27 +1,158 @@
+/* Votre CSS desktop reste identique */
 .testimonial {
-  display: flex;
+  display: grid;
+  grid-template-columns: 20vw 2fr;
   margin: 120px auto 0 auto;
+  width: 70vw;
+  align-items: start;
 }
 
-.testimonial-container {
+.testimonial-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.testimonial-navigation {
+  display: flex;
+  gap: 15px;
+}
+
+.testimonial-navigation .wp-block-button__link {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: var(--font-cunia);
+  font-weight: 300;
+  border: solid 2px var(--dark-green);
+  background: var(--cream);
+  color: var(--dark-green);
+  text-decoration: none;
+  transition: all 0.2s ease;
+  padding: 0 !important;
+  box-shadow: var(--shadow-header);
+}
+
+.testimonial-navigation .wp-block-button__link:hover {
+  background: var(--dark-green);
+  color: var(--cream);
+}
+
+.testimonial-cards {
   display: flex;
   gap: var(--gap-cards);
-  width: 80%;
+  overflow: hidden;
+  position: relative;
 }
 
-.testimonial-container h2{
-  width: 20%;
+.testimonial-cards-track {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.4s ease-in-out;
 }
 
 .testimonial-card {
+  flex: 0 0 calc((100% - 15px * 2) / 3);
   background-color: var(--light-grey);
   border-radius: var(--radius);
-  padding: var(--padding-cards);
+  padding: 20px;
   min-height: var(--cards-s);
-  gap: 2vh;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.testimonial-card > p {
+  line-height: 1.6;
+  font-style: italic;
+  flex-grow: 1;
+  margin: 0;
+  text-align: justify;
 }
 
 .testimonial-card_row {
   display: flex;
   padding-top: 2vh;
+  margin-top: auto;
+}
+
+@media (max-width: 767px) {
+  .testimonial {
+    grid-template-rows: auto 1fr auto !important; /* Changé: auto 1fr auto au lieu de auto auto 1fr */
+    grid-template-columns: none;
+    width: 80vw !important;
+    gap: 15px !important;
+    margin: 0 auto 120px auto !important;
+  }
+  
+  .testimonial-left-column {
+    position: relative;
+    grid-row: 1 !important;
+    text-align: center !important;
+    gap: 15px;
+  }
+  
+  .testimonial-navigation {
+    position: absolute;
+    top: 420px;
+    left: 50% !important; /* Centre horizontal */
+    transform: translateX(-50%) !important; /* Ajustement précis du centre */
+    grid-row: 3 !important; /* Ajouté: positionnement en ligne 3 */
+    justify-content: center;
+  }
+  
+  .testimonial-navigation .wp-block-button__link {
+    width: 40px !important;
+    height: 40px !important;
+    font-size: 1.2rem !important;
+  }
+  
+  .testimonial-cards {
+    grid-row: 2 !important; /* Changé: ligne 2 au lieu de ligne 3 */
+    overflow: hidden !important;
+    width: 280px !important; /* Largeur fixe pour 1 carte exactement */
+    max-width: 300px !important;
+    justify-self: center !important;
+    margin: 0 auto !important;
+  }
+  
+  .testimonial-cards-track {
+    display: flex !important;
+    transition: transform 0.3s ease !important;
+    width: calc(280px * 4) !important;
+  }
+  
+  .testimonial-card {
+    flex: 0 0 280px !important; /* Largeur fixe de 280px */
+    width: 280px !important;
+    min-height: 250px !important;
+    max-height: none !important;
+    margin: 0 !important;
+    padding: 15px !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  
+  .testimonial-card > p {
+    font-size: 0.95rem !important;
+    line-height: 1.5 !important;
+    flex-grow: 1 !important;
+    margin: 0 0 15px 0 !important;
+  }
+  
+  .testimonial-card_row {
+    padding-top: 15px !important;
+    margin-top: auto !important;
+    flex-shrink: 0 !important;
+  }
+  
+  .testimonial-card_row .wp-block-image img {
+    width: 40px !important;
+    height: 40px !important;
+  }
 }

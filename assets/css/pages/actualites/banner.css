@@ -13,5 +13,36 @@
   font-weight: 100;
   width: 575px;
   margin-bottom: 30px;
+}
 
+
+@media (max-width: 1023px) {
+  .banner-container-actualites {
+    width: 50vw;
+    padding-bottom: 8vh;
+    gap: 10px;
+  }
+  
+  .banner-text-actualites {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 25px;
+  }
+}
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+  .banner-container-actualites {
+    width: 90vw;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 10px;
+  }
+  
+  .banner-text-actualites {
+    width: 100% !important;
+    margin-bottom: 20px;
+    text-align: left;
+  }
 }

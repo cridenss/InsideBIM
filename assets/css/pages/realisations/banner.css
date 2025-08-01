@@ -12,12 +12,50 @@
   text-align: justify;
   font-weight: 100;
   width: 575px;
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
 }
 
 .banner-title-realisations{
   color: var(--cream);
   margin-bottom: 20px;
+}
 
+@media (max-width: 1023px) {
+  .banner-container-realisations {
+    width: 50vw;
+    padding-bottom: 8vh;
+    gap: 10px;
+  }
+  
+  .banner-text-realisations {
+    width: 90%;
+    max-width: 500px;
+    margin-bottom: 25px;
+  }
+  
+  .banner-title-realisations {
+    margin-bottom: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-container-realisations {
+    width: 90vw;
+    padding-bottom: 5vh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    gap: 10px;
+  }
+  
+  .banner-text-realisations {
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .banner-title-realisations {
+    margin-bottom: 15px;
+    text-align: center;
+  }
 }

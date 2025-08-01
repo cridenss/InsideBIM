@@ -6,7 +6,6 @@
   width: 100vw;
   position: relative;
   z-index: 2;
-
 }
 
 .partners-container {
@@ -20,11 +19,32 @@
   position: absolute;
   top: -4vh;
   height: 100%;
-  
-
 }
 
 .partner-image {
   width: 70px;
   height: auto;
+}
+
+@media (max-width: 1023px) {
+
+}
+
+@media (max-width: 767px) {
+  .partners {
+    position: static;
+}
+
+  .partners-container {
+    justify-content: space-between;
+    width: 80vw;
+    border-radius: none;
+    box-shadow: none;
+    position: static;
+  }
+
+  .partner-image {
+    width: 50px;
+    height: auto;
+  }
 }

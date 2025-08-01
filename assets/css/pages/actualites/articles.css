@@ -1,4 +1,5 @@
-.articles{
+/* CSS de base (déjà existant) */
+.articles {
     width: var(--max-width);
     margin: 5vh auto;
     display: grid;
@@ -7,7 +8,7 @@
     gap: 2vw;
 }
 
-.article-card{
+.article-card {
     display: flex;
     flex-direction: column;
     gap: 3vh;
@@ -18,21 +19,20 @@
     height: 60vh;
 }
 
-.article-card figure{
+.article-card figure {
     display: flex;
     height: 60%;
     overflow: hidden;
     border-radius: 10px 10px 0 0;
 }
 
-.article-card figure img{
+.article-card figure img {
     width: 100%;
     height: 100%;
     object-fit: cover; /* Garde les proportions, peut rogner */
 }
 
-
-.article-card-content{
+.article-card-content {
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -40,4 +40,60 @@
     gap: 2vh;
     height: 40%;
     padding: 0 2vw 0 2vw;
+}
+
+/* Tablette et écrans moyens (jusqu'à 1023px) */
+@media (max-width: 1023px) {
+    .articles {
+        grid-template-columns: 1fr 1fr;
+        gap: 3vw;
+        margin: 4vh auto;
+    }
+    
+    .article-card {
+        gap: 2.5vh;
+        height: 55vh;
+    }
+    
+    .article-card-content {
+        gap: 10px;
+        padding: 0 2.5vw 0 2.5vw;
+    }
+}
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+    .articles {
+        grid-template-columns: 1fr;
+        gap: 4vw;
+        margin: 3vh auto;
+        width: 90vw;
+    }
+    
+    .article-card {
+        min-width: 100%;
+        gap: 2vh;
+        height: 50vh;
+    }
+    
+    .article-card figure {
+        height: 55%;
+    }
+    
+    .article-card-content {
+        height: 45%;
+        gap: 10px;
+        padding: 0 4vw 2vh 4vw;
+        text-align: left;
+    }
+    
+    .article-card-content h3 {
+        font-size: 1.1em;
+        margin-bottom: 0.5rem;
+    }
+    
+    .article-card-content p {
+        font-size: 0.9em;
+        line-height: 1.4;
+    }
 }

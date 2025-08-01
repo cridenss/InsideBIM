@@ -4,6 +4,7 @@
   justify-content:flex-start;
   align-items: center;
   margin: 80px auto 120px auto;
+  width: 70vw;
 }
 
 .options-container {
@@ -13,14 +14,10 @@
   gap: var(--spacing-md);
 }
 
-.options h3 {
-  margin-bottom: 60px ;
-}
-
 .option-card {
   display: flex;
-  flex-direction: column;
   justify-content: space-around;
+  flex-direction: column;
   align-items: left;
   border-radius: var(--radius);
   border: solid 2px var(--dark-green);
@@ -28,4 +25,35 @@
   min-height: 30vh;
   width: 33.3%;
   box-shadow: var(--shadow-header);
+}
+
+@media (max-width: 767px) {
+  .options {
+    width: 90vw;
+    margin: 60px auto 60px auto;
+  }
+  
+  .options h3 {
+    margin-bottom: 30px;
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+  }
+  
+  .options-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .option-card {
+    flex-direction: column;
+    width: 100%;
+    height: auto; /* Hauteur automatique selon le contenu */
+    min-height: 180px; /* Hauteur minimale plus réaliste */
+    max-height: none;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 15px; /* Espacement entre les éléments internes */
+  }
 }

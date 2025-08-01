@@ -19,6 +19,23 @@
     gap: var(--gap-cards-l);
 }
 
-.cta-content h2, .cta-content p {
-    color: var(--dark-green) !important;
+@media (max-width: 767px) {
+    .cta {
+        width: 80vw;
+        margin: 100px auto 80px auto;
+
+    }
+
+    .cta-container {
+        background-color: var(--light-green);
+    }
+
+    .cta-content {
+        text-align: center;
+        width: 100%;
+    }
+
+    .cta-content h2, .cta-content p {
+        color: var(--dark-green) !important;
+    }
 }

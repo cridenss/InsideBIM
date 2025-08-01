@@ -21,6 +21,7 @@ body {
     transform: translateZ(0);
     will-change: scroll-position;
     background-color: red;
+
 }
 
 img {

@@ -1,3 +1,5 @@
+/* ACCUEL */
+
 h1{
     font-size: 3rem;
     line-height: 1;
@@ -5,18 +7,11 @@ h1{
     color: var(--cream);
 }
 
-h2{
-    font-size: 2.5rem;
-    font-family: var(--font-cunia);
+.hero-content p{
+  color: var(--cream);
+  text-align: justify;
 }
 
-
-h3{
-    font-size: 2.5rem;
-    font-family: var(--font-tiktok);
-    font-weight: 400;
-    color: rgb(68, 78, 60);
-}
 
 .service h3 {
   margin-bottom: 60px;
@@ -26,12 +21,61 @@ h3{
   color: var(--cream);
 }
 
-h4{
-    font-size: 1.4rem;
-    font-weight: 400;
-    font-family: var(--font-tiktok);
-    color: var(--dark-green);
+.service-card a, .article-card-content a {
+  width: 100%;
+  height: 100%;
+  color: var(--dark-green);
+  font-weight: 500;
 }
+
+.cta-content p {
+    color: var(--dark-green) !important;
+}
+
+@media (max-width: 767px) {
+  .service h3{
+    margin-bottom: 40px;
+  }
+
+  .testimonial-left-column h3, .section-engagement h3{
+    margin-bottom: 20px;
+  }
+
+  .cta-container h3{
+    margin-bottom: 20px;
+  }
+
+
+}
+    
+
+/* SERViCES */
+
+.engagement-card p{
+    font-size: 1.2rem !important;
+    font-weight: 400 !important;
+    text-align: center;
+}
+
+.options h3 {
+  margin-bottom: 60px ;
+}
+
+@media (max-width: 767px) {
+  .engagement-card p{
+    font-size: 1rem !important;
+  }
+  .options h3 {
+  margin-bottom: 40px ;
+  }
+  
+  .option-card h4 {
+    line-height: 1.5em;
+  }
+}
+
+
+/* REALiSATiONS */
 
 .project-card_description h4{
     text-transform: uppercase;
@@ -39,42 +83,17 @@ h4{
     padding: 2vh 0 0 0;
 }
 
-.banner-title-actualites{
-  color: var(--cream);
-  margin-bottom: 20px;
-}
-
-
-h5{
-    font-size: 1.2rem;
-    font-weight: 500;
-    font-family: var(--font-tiktok);
-    color: var(--dark-green);
-}
-
-.hero-content p{
-  color: var(--cream);
-  text-align: justify;
-}
-
-
-p  {
-    font-family: var(--font-tiktok);
-    color: var(--dark-green);
-    font-weight: 200;
-}
-
-.engagement-card p{
-    font-size: 1.2rem !important;
-    font-weight: 400 !important;
-    text-align: justify;
-}
-
-
 .project-card_description p{
     font-weight: 200;
     padding: 2vh 0 2vh 0;
     text-align: justify;
+}
+
+/* ACTUS */
+
+.banner-title-actualites{
+  color: var(--cream);
+  margin-bottom: 20px;
 }
 
 .banner-text-actualites{
@@ -85,21 +104,50 @@ p  {
   margin-bottom: 20px;
 }
 
-.engagement-card p{
-  text-align: justify;
+/* CONTACT */
+
+/* SHARED */
+
+
+h2{
+    font-size: 2.5rem;
+    font-family: var(--font-cunia);
 }
 
+h3{
+    font-size: 2.5rem;
+    font-family: var(--font-tiktok);
+    font-weight: 400;
+    color: rgb(68, 78, 60);
+}
+
+
+
+h4{
+    font-size: 1.4rem;
+    font-weight: 400;
+    font-family: var(--font-tiktok);
+    color: var(--dark-green);
+}
+
+h5{
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-tiktok);
+    color: var(--dark-green);
+}
+
+
+
+p  {
+    font-family: var(--font-tiktok);
+    color: var(--dark-green);
+    font-weight: 200;
+}
 
 a {
     font-family: var(--font-tiktok);
     text-decoration: none;
-}
-
-.service-card a, .article-card-content a {
-  width: 100%;
-  height: 100%;
-  color: var(--dark-green);
-  font-weight: 500;
 }
 
 
@@ -116,13 +164,23 @@ a {
         text-align: center;
     }
 
+    h2{
+        font-size: 1.5rem;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    h4{
+        font-size: 1rem;
+    }
+
     p {
       font-size: 0.8rem;
     }
     
-    h4{
-        font-size: 1rem;
-    }
+
 
 
 

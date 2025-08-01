@@ -13,7 +13,7 @@
   width: 70vw;
 }
 
-.engagement-media {
+.engagement-image {
   width: 50%;
 }
 
@@ -38,5 +38,31 @@
   font-family: var(--font-lato);
   font-weight: 700;
   color: var(--light-green_hover) !important;
+}
 
+@media (max-width: 1023px) {
+
+}
+
+@media (max-width: 767px) {
+  .section-engagement {
+    margin: 0 auto 120px auto;
+    padding: 120px 0;
+
+  }
+
+  .engagement-container {
+    flex-direction: column;
+    width: 80vw;
+  }
+
+  .engagement-image{
+  display: none;
+}
+
+  .engagement-content {
+    width: 100%;
+    align-items: center;
+
+  }
 }

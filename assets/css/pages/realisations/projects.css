@@ -1,4 +1,5 @@
-.projects{
+/* CSS de base (déjà existant) */
+.projects {
     width: var(--max-width);
     margin: 40px auto;
     display: grid;
@@ -11,8 +12,7 @@
     position: relative;
 }
 
-
-.project-card{
+.project-card {
     display: flex;
     flex-direction: column;
     gap: 3vh;
@@ -34,42 +34,36 @@
     overflow: visible !important;
 }
 
-.project-card_image{
+.project-card_image {
     display: flex;
     justify-content: center;
     width: 100%;
     border-radius: 10px;
 }
 
-.project-card_image img{
+.project-card_image img {
     width: 50%;
 }
 
-.project-card_intro{
+.project-card_intro {
 }
 
-.project-card_intro h5{
-
+.project-card_intro h5 {
 }
 
-.project-card_intro p{
-
+.project-card_intro p {
 }
 
-
-.project-card_items_description{
+.project-card_items_description {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
-
 
 .wp-block-buttons.expand-button {
     margin: 0 !important;
 }
 
-/* Le bouton lui-même */
 .expand-button .wp-block-button {
     margin: 0 !important;
     position: absolute !important;
@@ -78,35 +72,106 @@
     z-index: 10;
 }
 
-/* Le lien du bouton (l'élément principal à styler) */
 .expand-button .wp-block-button__link {
-    
-    /* Dimensions égales = cercle parfait */
     width: 40px !important;
     height: 40px !important;
     border-radius: 50% !important;
     border: solid 2px white;
     background-color: var(--green);
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
-
-
-    
-    /* Centrer le texte */
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    
-    /* Reset des styles par défaut WordPress */
     padding: 0 !important;
     min-width: auto !important;
     line-height: 1 !important;
-    
-    /* Style du texte */
     font-size: 20px !important;
     font-weight: 600 !important;
     text-decoration: none !important;
     color: white;
-    
-    /* Transition fluide */
     transition: all 0.3s ease !important;
+}
+
+/* Tablette et écrans moyens (jusqu'à 1023px) */
+@media (max-width: 1023px) {
+    .projects {
+        gap: 3vw;
+        margin: 30px auto;
+        justify-content: center;
+    }
+    
+    .project-card {
+        gap: 2.5vh;
+        height: 40vh;
+        padding: calc(var(--padding-cards) * 0.8) !important;
+    }
+    
+    .project-card.expanded {
+        min-height: 40vh !important;
+    }
+    
+    .project-card_image img {
+        width: 60%;
+    }
+    
+    .expand-button .wp-block-button__link {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 18px !important;
+    }
+}
+
+/* Mobile (jusqu'à 767px) */
+@media (max-width: 767px) {
+    .projects {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        gap: 4vw;
+        margin: 20px auto;
+        width: 90vw;
+    }
+    
+    .project-card {
+        min-width: 100%;
+        gap: 2vh;
+        height: 35vh;
+        padding: 20px !important;
+
+    }
+    
+    .project-card.expanded {
+        min-height: 35vh !important;
+        max-height: 120vh;
+        padding: 20px !important;
+
+    }
+    
+    .project-card_image {
+        margin-bottom: 1vh;
+    }
+    
+    .project-card_image img {
+        width: 50%;
+    }
+    
+    .project-card_intro h4 {
+        font-size: 0.8em;
+        margin-bottom: 0.5rem;
+    }
+    
+    .project-card_intro p {
+        font-size: 0.9em !important;
+        line-height: 1.4;
+    }
+    
+    .expand-button .wp-block-button {
+        top: 90% !important;
+    }
+    
+    .expand-button .wp-block-button__link {
+        width: 35px !important;
+        height: 35px !important;
+        font-size: 16px !important;
+        border-width: 1px;
+    }
 }

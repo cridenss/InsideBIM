@@ -3,7 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .banner-container {
@@ -17,11 +17,11 @@
 
 .banner-media {
   margin-bottom: 20px;
-
 }
 
 .banner-media img{
   width: 150px;
+  height: auto;
 }
 
 .banner-text {
@@ -29,10 +29,45 @@
   text-align: justify;
   font-weight: 100;
   width: 575px;
+  max-width: 100%;
 }
 
 .banner-title{
   color: var(--cream);
   margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .section-banner {
+    padding: 40px 40px;
+  }
+  
+  .banner-container {
+    width: 90vw;
+    max-width: 500px;
+    padding-bottom: 5vh;
+    gap: 20px;
+  }
+  
+  .banner-media {
+    margin-bottom: 15px;
+  }
+  
+  .banner-media img {
+    width: clamp(100px, 15vw, 120px);
+  }
+  
+  .banner-text {
+    width: 100%;
+    text-align: justify; /* Centre sur mobile */
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    line-height: 1.5;
+  }
+  
+  .banner-title {
+    font-size: clamp(1.3rem, 4vw, 1.8rem);
+    margin-bottom: 15px;
+  }
+}
 
 }
