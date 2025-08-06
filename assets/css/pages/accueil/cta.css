@@ -8,9 +8,12 @@
     justify-content: center;
     flex-direction: column;
     padding: var(--container-padding);
-    background-color: var(--light-grey);
     border-radius: var(--radius-banner);
 }
+
+.cta-container h3 {
+    margin-bottom: 1rem;
+} 
 
 .cta-content {
     display: flex;

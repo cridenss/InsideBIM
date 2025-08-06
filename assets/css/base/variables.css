@@ -9,16 +9,15 @@
   --content-gap: clamp(1rem, 3vw, 3rem);
 
   /* Couleurs */
-  --cream: rgb(252, 251, 249);
-  --green: #9eac93;
-  --orange:#c7583638;
-  --yellow: #e9a7008c;
-  --dark-green: #444e3c;
-  --dark-green-lighter: rgb(88, 100, 78);
+  --cream: #fcfbf9;
+  --green: #8C9C7C;
+  --orange:#ff3c0026;
   --light-green: #DBE0D5;
+  --ocean-black: #232826;
   --light-green_hover: #cfddc2;
   --light-grey: #9aa09b42;
   --grey: #75727D;
+  --dark-green-lighter: #58644e;
 
   /* Polices */
   --font-lato: 'Lato', Arial, sans-serif;
@@ -55,7 +54,7 @@
   /* Shadows */
   --shadow: 0px 5px rgb(68, 78, 60, 0.8);
   --shadow-header: 0 2px 5px 0 rgb(0, 0, 0, 0.1);
-  --shadow-cards: 0 5px 5px rgb(0, 0, 0, 0.1);
+  --shadow-button: 0 5px 5px rgb(0, 0, 0, 0.2);
 
   /* Breakpoints */
   --breakpoint-sm: 576px;

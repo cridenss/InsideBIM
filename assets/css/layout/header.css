@@ -5,49 +5,30 @@ header {
     margin: 0 auto;
     width: 100vw;
     height: 10vh;
-    background-color: var(--dark-green) !important;
+    position: sticky;
+    z-index: 5;
+    top: 0;
+    background: var(--cream);
 }
 
 .header-nav {
     display: flex;
-    width: 80vw;
-    align-items: center !important;
-    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 100%;
+    text-transform: uppercase;
+    font-family: var(--font-lato);
+    font-weight: 600;
 }
 
 .header-nav_logo {
-    flex-shrink: 0;
-    z-index: 2;
-    margin-right: auto;
+
 }
 
 .header-nav-menu{
-    gap: 4vw;
-    font-family: var(--font-tiktok);
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: var(--cream);
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-}
-
-.header-nav_button {
-    flex-shrink: 0;
-    margin-left: auto; /* Pousse le bouton à droite */
-    z-index: 2; /* Au-dessus du menu centré */
-}
-
-.header-nav_button a{
-    border-radius: var(--radius-button);
-    padding: 10px 20px;
-    background-color: #E8EACC;
-    color: var(--dark-green);
-    font-family: var(--font-tiktok);
-    font-size: var(--font-size-s);
-    font-weight: 500;
-
+    display: flex;
+    gap: 4rem;
 }
 
 .header-nav_button a:hover{

@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content:flex-start;
   align-items: center;
-  margin: 80px auto 120px auto;
+  margin: 4vh auto 13vh auto;
   width: 70vw;
 }
 
@@ -18,13 +18,14 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  align-items: left;
-  border-radius: var(--radius);
-  border: solid 2px var(--dark-green);
+  align-items: center;
+  text-align: center;
+  border-radius: 10px;
+  border: solid 3px var(--green);
   padding: var(--padding-cards);
   min-height: 30vh;
   width: 33.3%;
-  box-shadow: var(--shadow-header);
+  box-shadow: var(--shadow-button);
 }
 
 @media (max-width: 767px) {

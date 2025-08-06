@@ -1,40 +1,45 @@
-.section-banner{
-  background-color: var(--dark-green);
+.section-banner {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
+  min-height: 70vh;
+  width: 90vw;
+  margin: 0 auto;
+  border-radius: 30px;
+  background-color: var(--light-green);
 }
 
 .banner-container {
   display: flex;
   flex-direction: column;
-  width: 35vw;
+  width: 70vw;
   align-items: center;
   justify-content: center !important;
-  padding-bottom: 10vh;
+  margin-bottom: 8vh;
+  z-index: 2;
 }
 
 .banner-media {
   margin-bottom: 20px;
 }
 
-.banner-media img{
+.banner-container img{
   width: 150px;
   height: auto;
 }
 
 .banner-text {
-  color: var(--cream);
-  text-align: justify;
+  color: var(--ocean-black);
+  text-align: center;
   font-weight: 100;
   width: 575px;
   max-width: 100%;
+  margin-bottom: 2rem;  
 }
 
 .banner-title{
-  color: var(--cream);
-  margin-bottom: 20px;
+  color: var(--ocean-black);
+  margin-bottom: 1rem;
 }
 
 @media (max-width: 768px) {

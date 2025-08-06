@@ -16,14 +16,22 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  width: 40%;
+  align-items: center;
+  width: 50%;
   gap: 40px;
   text-align: justify;
 }
 
+.who-content p{
+  text-align: center;
+}
+
+.who-content h3{
+  margin: 0 !important;
+}
+
 .who-media{
-  width: 40%;
+  width: 50%;
 }
 
 .who-media img{

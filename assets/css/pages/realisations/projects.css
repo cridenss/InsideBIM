@@ -1,196 +1,49 @@
-/* Wrapper de chaque carte */
-.project-wrapper {
-    position: relative;
-    margin-bottom: 2rem;
-    align-self: start;
-    width: 100%;
+.section-project{
+    display: flex;
+    justify-content: center;
+    width: 70vw;
+    height: 50vh;
+    margin: 80px auto;
 }
 
-/* Container principal */
-.projects {
-    width: var(--max-width);
-    margin: 40px auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    align-items: start;
-    padding: 0 1rem;
-}
-
-/* Container de la carte */
-.project-card-container {
+.fiv-inner {
+    width: 50vw !important;
+    height: 50vh !important;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 10px;
-    padding: 1.5rem 2.5rem;
-    height: 40vh;
-    overflow: hidden;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
     background-color: white;
-    position: relative;
-    z-index: 1;
+    padding: 5px 25px ;
 }
 
-/* État déplié */
-.project-card-container.expanded {
-    height: auto;
-    min-height: 40vh;
-    max-height: none;
-    overflow: visible;
+.fiv-prev, .fiv-next {
+    border-radius: 15px;
 }
 
-/* Image de la carte */
-.project-card_image {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 1rem;
+.fiv-count {
+    display: none !important;
 }
 
-.project-card_image img {
-    width: 50%;
-    height: auto;
-    border-radius: inherit;
+.fiv-ctrls {
+    padding: 0 10%;
 }
 
-/* ===== Contenu carte ===== */
+figure img {
+    height: 100% !important;
+    width: 100% !important;
+}
 
-.project-card-content{
+.project-content{
     display: flex;
     flex-direction: column;
-    gap: 4rem;
-}
-
-.project-card_description {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
+    height: 50vh !important;
+
     gap: 1rem;
-    text-align: center;
+    padding: 1rem 2rem;
 }
 
-/* Points de description */
-.project-card-bulletPoint {
-    display: flex;
-    gap: 0.5rem;
+.project-detail{
 }
 
-.project-card-bulletPoint-left{
-    display: flex;
-    flex-direction: column;
-    background-color: var(--light-grey);
-    border-radius: 5px;
-    padding: 1.5rem 1.5rem;
-    width: 50%;
-}
 
-.project-card-bulletPoint-right{
-    gap: 0.5em;
-    width: 50%;
-}
-
-.project-card-bulletPoint-right-description{
-    background-color: var(--light-grey);
-    border-radius: 5px;
-    padding: 1.5rem 1.5rem;
-
-}
-
-.gallery-container{
-    margin-bottom: 1rem;
-}
-
-/* ===========================================
-   BOUTON D'EXPANSION
-   =========================================== */
-
-.expand-button .wp-block-button {
-    position: absolute;
-    bottom: -1.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0;
-    z-index: 3;
-}
-
-.expand-button .wp-block-button__link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50px;
-    width: 50px;
-    padding: 0;
-    font-family: var(--font-tiktok);
-    font-weight: 500;
-    font-size: 1.25rem;
-    line-height: 1;
-    color: var(--cream);
-    background-color: var(--green);
-    border: 3px solid var(--cream);
-    border-radius: 50%;
-    box-shadow: var(--shadow-header);
-    text-decoration: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.expand-button .wp-block-button__link:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-@media (max-width: 767px) {
-    .projects {
-        width: 95vw;
-        display: flex;
-        flex-direction: column;
-        gap: 0;
-    }
-
-    .project-card-container {
-        width: calc(95vw - 2rem);
-        padding: 1rem;
-        height: 275px;
-    }
-
-    .project-card-container.expanded {
-        min-height: 275px;
-    }
-
-    .project-card-content{
-        width: 100%;
-        gap: 2rem;
-    }
-
-    .project-card_description {
-        gap: 0.5rem;
-    }
-
-    .project-card-bulletPoint{
-        padding-top: 1rem;
-        flex-direction: column;
-    }
-
-    .project-card-bulletPoint-left{
-        padding: 1rem;
-        width: 100%;
-        height: 33.3%;
-    }
-
-    .project-card-bulletPoint-right{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5em;
-        width: 100%;
-        height: calc(100% - 33.33%);
-    }
-
-    .project-card-bulletPoint-right-description{
-        padding: 1rem 1rem;
-        height: 50%;
-    }
-}

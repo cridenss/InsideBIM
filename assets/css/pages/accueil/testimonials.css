@@ -1,17 +1,32 @@
 /* Votre CSS desktop reste identique */
 .testimonial {
-  display: grid;
-  grid-template-columns: 20vw 2fr;
-  margin: 120px auto 0 auto;
+  display: flex;
+  margin:  60px auto 180px auto;
   width: 70vw;
-  align-items: start;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.testimonial-left-column {
+.testimonial-left-column{
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  justify-content: space-around;
+  height: 100% !important;
+  width: 20% !important;
 }
+
+.testimonial-left-column h3{
+  margin: 0 !important;
+}
+
+.testimonial-left-column h3::after{
+  display: none;
+}
+
+.testimonial-left-column img{
+  width: 80px;
+}
+
 
 .testimonial-navigation {
   display: flex;
@@ -45,14 +60,14 @@
 .testimonial-cards {
   display: flex;
   gap: var(--gap-cards);
-  overflow: hidden;
-  position: relative;
+  width: 75%;
 }
 
 .testimonial-cards-track {
   display: flex;
   gap: 15px;
   transition: transform 0.4s ease-in-out;
+  overflow: hidden;
 }
 
 .testimonial-card {
@@ -69,7 +84,6 @@
 .testimonial-card > p {
   line-height: 1.6;
   font-style: italic;
-  flex-grow: 1;
   margin: 0;
   text-align: justify;
 }

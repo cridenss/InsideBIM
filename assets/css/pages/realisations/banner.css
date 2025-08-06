@@ -1,15 +1,23 @@
+.section-banner-realisations{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 15vh;
+  margin: 10vh auto 0 auto;
+}
+
 .banner-container-realisations {
   display: flex;
   flex-direction: column;
   width: 35vw;
   align-items: center;
   justify-content: center !important;
-  padding-bottom: 10vh;
 }
 
 .banner-text-realisations {
-  color: var(--cream);
-  text-align: justify;
+  color: var(--ocean-black);
+  text-align: center;
   font-weight: 100;
   width: 575px;
   margin-bottom: 30px;
@@ -17,7 +25,7 @@
 }
 
 .banner-title-realisations{
-  color: var(--cream);
+  color: var(--ocean-black);
   margin-bottom: 20px;
 }
 

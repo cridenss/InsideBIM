@@ -4,21 +4,16 @@ h1{
     font-size: 3rem;
     line-height: 1;
     font-family: var(--font-cunia);
-    color: var(--cream);
+    color: var(--ocean-black);
 }
 
 .hero-content p{
-  color: var(--cream);
+  color:  var(--ocean-black);
   text-align: justify;
 }
 
 
 .service h3 {
-  margin-bottom: 60px;
-}
-
-.light-title{
-  color: var(--cream);
 }
 
 .service-card a, .article-card-content a {
@@ -53,8 +48,9 @@ h1{
 
 .engagement-card p{
     font-size: 1.2rem !important;
-    font-weight: 400 !important;
+    font-weight: 300 !important;
     text-align: center;
+    height: 2rem;
 }
 
 .options h3 {
@@ -138,39 +134,58 @@ h2{
 }
 
 h3{
-    font-size: 2.5rem;
-    font-family: var(--font-tiktok);
+    position: relative;
+    display: inline-block !important;
+    width: fit-content;
+    font-size: 2rem;
+    font-family: var(--font-cunia);
     font-weight: 400;
-    color: rgb(68, 78, 60);
+    color: var(--ocean-black);
+    margin-bottom: 60px;
+}
+
+h3::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 60%;
+  width: 100%;
+  height: 40%;
+  background-color: #ffa51383;
+  border-radius: 5px;
+  z-index: -1;
 }
 
 
 
 h4{
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 500;
     font-family: var(--font-tiktok);
-    color: var(--dark-green);
+    color: var(--ocean-black);
+
 }
 
 h5{
     font-size: 1.2rem;
     font-weight: 500;
     font-family: var(--font-tiktok);
-    color: var(--dark-green);
+    color: var(--ocean-black);
+
 }
 
 
 
 p  {
-    font-family: var(--font-tiktok);
-    color: var(--dark-green);
-    font-weight: 200;
+    font-family: var(--font-lato);
+    color: var(--ocean-black);
+    font-weight: 300;
+    line-height: 1.5rem;
+    
 }
 
 a {
-    font-family: var(--font-tiktok);
-    text-decoration: none;
+    font-family: var(--font-lato);
 }
 
 
@@ -202,9 +217,4 @@ a {
     p {
       font-size: 0.8rem;
     }
-    
-
-
-
-
-
+  }

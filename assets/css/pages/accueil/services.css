@@ -21,6 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: var(--gap-cards);
   min-height: var(--cards-s);
   transition: transform 0.1s ease;
@@ -29,7 +30,7 @@
 }
 
 .service-card p{
-  text-align: justify;
+  text-align: center;
 }
 
 .service-card:hover {

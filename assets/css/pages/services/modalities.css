@@ -3,7 +3,7 @@
   justify-content: center;
   gap: 40px;
   position: relative;
-  top: -20px;
+  top: -8vh;
   min-height: 20vh;
   width: 70vw;
   margin: 0 auto;
@@ -15,8 +15,8 @@
   align-items: center;
   justify-content: space-around;
   background-color: var(--cream);
-  border-radius: 10px;
   box-shadow: var(--shadow-header);
+  border-radius: 10px;
   padding: var(--padding-cards);
   width: 20vw;
 }
