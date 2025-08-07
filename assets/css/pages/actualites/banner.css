@@ -1,18 +1,32 @@
+.section-banner-actualites{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 15vh;
+  margin: 6vh auto 0 auto;
+}
+
 .banner-container-actualites {
   display: flex;
   flex-direction: column;
   width: 35vw;
   align-items: center;
   justify-content: center !important;
-  padding-bottom: 10vh;
 }
 
-.banner-text-actualites{
-  color: var(--cream);
-  text-align: justify;
+.banner-text-actualites {
+  color: var(--ocean-black);
+  text-align: center;
   font-weight: 100;
   width: 575px;
   margin-bottom: 30px;
+
+}
+
+.banner-title-actualites{
+  color: var(--ocean-black);
+  margin-bottom: 20px;
 }
 
 

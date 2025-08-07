@@ -1,0 +1,44 @@
+.form-container{
+    width: 40vw;
+    height: 50vh;
+    margin: 40px auto 140px auto;
+}
+
+form{
+    font-family: var(--font-lato);
+    background-color: var(--light-green) !important;
+    box-shadow: var(--shadow-button) !important;
+    padding: 2rem !important;
+    border-radius: 10px !important;
+}
+
+.form-identity {
+    width: 100% !important;
+}
+
+.wpforms-field-row-block {
+    width: 33% !important;
+}
+
+
+.wpforms-submit-container {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+#wpforms-submit-1446 {
+    font-family: var(--font-cunia);
+    font-size: 1rem;
+    font-weight: 200;
+    box-shadow: var(--shadow-button);
+    color: var(--cream);
+}
+
+legend, label {
+    color: var(--ocean-black) !important;
+    font-size: 1.1rem !important;
+}
+
+.wpforms-required-label {
+    display: none;
+}

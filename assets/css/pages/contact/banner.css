@@ -1,0 +1,30 @@
+.section-banner-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 15vh;
+  margin: 6vh auto 0 auto;
+}
+
+.banner-container-contact {
+  display: flex;
+  flex-direction: column;
+  width: 35vw;
+  align-items: center;
+  justify-content: center !important;
+}
+
+.banner-text-contact {
+  color: var(--ocean-black);
+  text-align: center;
+  font-weight: 100;
+  width: 40vw;
+  margin-bottom: 30px;
+
+}
+
+.banner-title-contact{
+  color: var(--ocean-black);
+  margin-bottom: 20px;
+}

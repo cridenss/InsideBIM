@@ -8,16 +8,40 @@
 
 .fiv-inner {
     width: 50vw !important;
-    height: 50vh !important;
+    height: 45vh !important;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: white;
-    padding: 5px 25px ;
+    align-items: center;
+    background-color: var(--light-green);
+    box-shadow: var(--shadow-header);
+    padding: 25px;
+
+}
+
+.fiv-inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80% !important;
+    height: 80% !important;
+    border-radius: 10px ;
 }
 
 .fiv-prev, .fiv-next {
-    border-radius: 15px;
+    border-radius: 5px !important;
+    background-color: var(--cream) !important;
+    color: var(--ocean-black) !important;
+    width: 5vw !important;
+    font-family: var(--font-lato) !important;
+    box-shadow: var(--shadow-header) !important;
+    border: none;
+    margin: 0 2vw !important;
+}
+
+.fiv-prev:hover, .fiv-next:hover {
+    background-color: var(--green) !important;
+    color: var(--cream) !important;
 }
 
 .fiv-count {
@@ -25,25 +49,42 @@
 }
 
 .fiv-ctrls {
-    padding: 0 10%;
+    background-color: transparent !important;
+    border: none !important;
 }
 
-figure img {
-    height: 100% !important;
-    width: 100% !important;
+.fg-image-wrap{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.section-project figure img {
+    width: 70% !important;
 }
 
 .project-content{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 50vh !important;
-
+    height: 45vh !important;
     gap: 1rem;
     padding: 1rem 2rem;
 }
 
-.project-detail{
+.project-title{
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 1vh;
+}
+
+.project-detail {
+}
+
+.project-detail h4{
+    font-weight: 400;
+    font-size: 1.2rem;
 }
 
 
