@@ -19,12 +19,19 @@
   border-radius: 10px;
   padding: var(--padding-cards);
   width: 20vw;
+  gap: 1vh;
 }
 
 .engagement-card img{
   width: 50px;
 }
 
+.engagement-card p{
+  font-size: 1.1rem !important;
+  font-weight: 400 !important;
+  text-align: center;
+  height: 2rem;
+}
 
 @media (max-width: 768px) {
   .engagements {
@@ -38,13 +45,15 @@
   
   .engagement-card {
     width: calc(50% - 10px); /* 2 cartes par ligne */
-    min-width: 150px;
-    min-height: 180px;
+    height: 15vh;
     padding: 20px;
   }
   
   .engagement-card img {
     width: 40px;
-    margin-bottom: 12px;
+  }
+
+  .engagement-card p{
+    font-size: 0.8rem !important;
   }
 }

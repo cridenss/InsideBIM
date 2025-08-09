@@ -13,17 +13,17 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 20%;
+    width: 25%;
     height: 100%;
 }
 
 .footer-contact{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: flex-start;
     height: 100%;
-    width: 20%;
+    width: 25%;
     border-left: solid 1px var(--green);
     border-right: solid 1px var(--green);
     padding: 0 2vw;
@@ -37,21 +37,22 @@ footer {
     gap: 1vw;
 }
 
-.footer-contact div figure img{
-    height: 30px;
+.footer-contact div figure{
     width: 30px;
+    height: 30px;
 }
 
 
-.footer-contact div img{
-   height: 100%;
-   width: auto;
+.footer-contact div figure img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .footer-nav{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: 100%;
     width: 20%;
     border-left: solid 1px var(--green);
@@ -67,5 +68,58 @@ footer {
 .footer-nav a{
     text-decoration: none;
     color: var(--ocean-black);
-    font-weight: 400;
+    font-weight: 300;
+}
+
+.footer-nav a:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 1023px) {
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px; 
+        padding: 0;
+        justify-content: center !important;
+    }
+
+    .footer-title{
+        grid-area: 1 / 1 / 2 / 3;
+        width: 100%;
+        height: 100%;
+    }
+
+    .footer-contact{
+        grid-area: 2 / 1 / 3 / 2;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        padding: 0 0 2vh 0;
+        padding-left: 10%;
+    }
+
+    .footer-contact div figure{
+        width: 20px;
+        height: 20px;
+    }
+
+    .footer-nav{
+        grid-area: 2 / 2 / 3 / 3;
+        width: 100%;
+        border-left: none;
+        border-right: none;
+        padding: 0 0 2vw 0;
+    }
+
+    .footer-nav p{
+        text-align: left;
+        padding-left: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+
 }

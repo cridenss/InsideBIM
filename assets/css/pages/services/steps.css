@@ -41,14 +41,17 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 2vh;
   z-index: 2;
   height: 30vh;
 }
 
+.steps-card h4 {
+  margin-bottom: 1vh;
+}
+
 .steps-card p {
   color: var(--dark-green);
-  text-align: justify;
+  text-align: center;
 }
 
 .steps-card :first-child {
@@ -64,11 +67,12 @@
   border: solid 3px var(--green);
   border-radius: 50%;
   box-shadow: var(--shadow-header);
+  margin-bottom: 2vh;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
 .steps{
-  margin-bottom: 80px;
+  margin:  80px auto 80px auto; 
 }
 
 .steps h3, .steps h4{
@@ -95,26 +99,45 @@
 
 .steps-card{
   display: grid;
-  grid-template-columns: 30% 70%;
-  align-items: center;
-  justify-content: flex-start;
-  text-align: left;
+  grid-template-columns: 10% 90%;
+  text-align: left; 
   gap: 0;
+  height: 11vh;
+  align-content: center;
 }
 
 .steps-card :first-child {
   grid-column: 1;
   grid-row:1 / span 2 ;
+  margin: 0;
 }
 
 .steps-card :nth-child(2) {
   grid-column: 2;
   grid-row:1;
+  padding-left: 2vw;
 }
 
 .steps-card :last-child {
   grid-column: 2;
   grid-row:2;
-
+  text-align: justify;
+  line-height: 1rem;
+  padding-left: 2vw;
 }
+}
+
+@media (max-width: 767px) {
+  
+  .steps-card{
+    grid-template-columns: 30% 70%;
+  }
+
+  .steps-card :nth-child(2) {
+    padding-left: 0;
+  }
+
+  .steps-card :last-child {
+    padding-left: 0;
+  }
 }

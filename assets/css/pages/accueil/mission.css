@@ -1,29 +1,30 @@
 .section-engagement {
   display: flex;
-  margin: 0 auto 0 auto;
-  width: 80vw;
+  justify-content: center;
+  width: 100vw;
   border-radius: 10px;
 }
 
 .engagement-container {
   display: flex;
   align-items: center;
-  gap: var(--gap-cards);
+  justify-content: space-between !important;
   width: 70vw;
 }
 
 .engagement-image {
-  width: 40%;
+  width: 45%;
 }
 
 .engagement-content {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 45%;
+  gap: 4vh;
 }
 
-.engagement-content h2 {
-  text-align: justify;
+.engagement-content h3 {
+  margin: 0 !important;
 }
 
 .engagement-content p {
@@ -37,14 +38,8 @@
 }
 
 @media (max-width: 1023px) {
-
-}
-
-@media (max-width: 767px) {
   .section-engagement {
-    margin: 0 auto 120px auto;
-    padding: 120px 0;
-
+    margin:  80px auto 80px auto;
   }
 
   .engagement-container {
@@ -53,12 +48,28 @@
   }
 
   .engagement-image{
-  display: none;
-}
+    width: 100%;
+  }
 
   .engagement-content {
     width: 100%;
     align-items: center;
-
+    gap: 2vh;
   }
+
+  .engagement-content p {
+    text-align: center;
+  }
+
+  .engagement-content-keywords{
+    width: 100%;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.7rem !important;
+    margin-top: 1vh;
+  }
+}
+
+@media (max-width: 767px) {
+
 }

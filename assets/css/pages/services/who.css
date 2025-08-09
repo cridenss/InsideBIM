@@ -38,32 +38,36 @@
   border-radius: 5px;
 }
 
+@media (max-width: 1023px) {
+  .who{
+    width: 90vw;
+    margin: 80px auto 80px auto;
+  }
+
+  .who-container{
+    flex-direction: column !important;
+    gap: 5px;
+  }
+
+  .who-content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--light-grey);
+    padding: 20px;
+    border-radius: 5px;
+  }
+
+  .who-media{
+    width: 100%;
+  }
+
+  .who-media img{
+    border-radius: 5px 5px 0 0;
+  }
+}
+
 @media (max-width: 767px) {
-.who{
-  width: 90vw;
-  margin: 0 auto 80px auto;
-}
 
-.who-container{
-  flex-direction: column !important;
-  gap: 5px;
-}
-
-.who-content{
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: var(--light-grey);
-  padding: 20px;
-  border-radius: 5px;
-}
-
-.who-media{
-  width: 100%;
-}
-
-.who-media img{
-  border-radius: 5px 5px 0 0;
-}
 }

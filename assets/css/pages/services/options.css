@@ -23,15 +23,15 @@
   border-radius: 10px;
   border: solid 3px var(--green);
   padding: var(--padding-cards);
-  min-height: 30vh;
+  height: 30vh;
   width: 33.3%;
   box-shadow: var(--shadow-button);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .options {
     width: 90vw;
-    margin: 60px auto 60px auto;
+    margin:  80px auto 80px auto; 
   }
   
   .options h3 {
@@ -48,13 +48,15 @@
   .option-card {
     flex-direction: column;
     width: 100%;
-    height: auto; /* Hauteur automatique selon le contenu */
-    min-height: 180px; /* Hauteur minimale plus réaliste */
-    max-height: none;
-    padding: 20px;
+    height: 17vh; /* Hauteur automatique selon le contenu */
+    padding: 10px;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 15px; /* Espacement entre les éléments internes */
   }
+}
+
+@media (max-width: 767px) {
+
 }

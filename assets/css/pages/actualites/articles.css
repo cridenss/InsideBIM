@@ -64,23 +64,34 @@
 }
 
 /* Tablette et écrans moyens (jusqu'à 1023px) */
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .articles {
-        grid-template-columns: 1fr 1fr;
-        gap: 3vw;
+        grid-template-columns: 50% 1fr;
+        gap: 2vw;
         margin: 4vh auto;
     }
     
     .article-card {
         gap: 2.5vh;
-        height: 55vh;
+        height: 40vh;
     }
-    
+
+    .article-card figure {
+        height: 40%;
+    }
+
     .article-card-content {
         gap: 10px;
         padding: 0 2.5vw 0 2.5vw;
     }
+
+    .article-card-content h4 {
+        font-size: 1.1em;
+        margin-bottom: 0.5rem;
+    }
 }
+
+
 
 /* Mobile (jusqu'à 767px) */
 @media (max-width: 767px) {
@@ -96,7 +107,7 @@
         gap: 2vh;
         height: 50vh;
     }
-    
+
     .article-card figure {
         height: 55%;
     }
@@ -108,7 +119,7 @@
         text-align: left;
     }
     
-    .article-card-content h3 {
+    .article-card-content h4 {
         font-size: 1.1em;
         margin-bottom: 0.5rem;
     }

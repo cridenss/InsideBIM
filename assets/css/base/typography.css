@@ -46,21 +46,12 @@ h1{
 
 /* SERViCES */
 
-.engagement-card p{
-    font-size: 1.2rem !important;
-    font-weight: 300 !important;
-    text-align: center;
-    height: 2rem;
-}
-
 .options h3 {
   margin-bottom: 60px ;
 }
 
 @media (max-width: 767px) {
-  .engagement-card p{
-    font-size: 1rem !important;
-  }
+
   .options h3 {
   margin-bottom: 40px ;
   }

@@ -22,21 +22,11 @@ header {
     font-weight: 600;
 }
 
-.header-nav_logo {
-
-}
-
 .header-nav-menu{
     display: flex;
     gap: 4rem;
 }
 
-.header-nav_button a:hover{
-    background-color: var(--green);
-    color: var(--dark-green);
-    transition: ease-in-out 0.3s;
-
-}
 .header-nav-mainItem:hover{
     color: var(--green);
 }
@@ -65,6 +55,7 @@ header {
     padding: 14px 20px;
     color: var(--bleu-nuit);
     font-weight: 300;
+    font-size: 0.9rem;
     margin: 0 8px;
     transition: all 0.3s ease;
 }
@@ -77,18 +68,31 @@ header {
 }
 
 @media (max-width: 1023px) {
-    header{
-    }
+
     .header-nav {
         width: 90vw;
+        font-size: 0.8rem;
+    }
+    
+    .header-nav_logo {
+        margin-top: 1vh;
+        width: 90px;
+    }
+
+
+    .header-nav-menu {
+        gap: 1rem !important;
+    }
+
+    .header-nav .buttons a {
+        padding: 15px;
+        font-size: 0.8rem;
+        font-weight: 200;
     }
 }
 
 /* Mobile (jusqu'à 767px) */
 @media (max-width: 767px) {
-    header {
-        min-height: 8vh;
-    }
 
     .header-nav {
         width: 90vw;
@@ -96,13 +100,11 @@ header {
 
     .header-nav_logo {
         width: 80px;
-        flex-shrink: 0;
-        margin-right: auto;
-
+        margin-top: 0;
     }
 
-    .header-nav_button a{
-        display: none !important;
+    .header-nav .buttons a {
+        display: none;
     }
 
     .header-nav-menu {
@@ -110,5 +112,45 @@ header {
         transform: none;
         left: auto;
         margin-left: auto;
+        gap: 2rem !important;
+    }
+
+    .wp-block-navigation__container{
+        margin-top: 25% !important;
+    }
+
+    .wp-block-navigation__submenu-container {
+        border: none !important;
+        box-shadow: none !important;
+        min-width: 280px;
+        padding:0 !important;
+
+    }
+
+    /* Items du sous-menu */
+    .wp-block-navigation__responsive-container-content{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+
+    }
+    .wp-block-navigation__submenu-container .wp-block-navigation-item__content {
+        padding-top: 1rem !important;
+    }
+
+    .wp-block-navigation__submenu-container .wp-block-navigation-item__content:hover {
+        background-color: var(--light-green);
+        color: var(--ocean-black);
+        padding-left: 0;
+        gap:0 !important;
+        margin: 0 !important;
+    }
+
+    .wp-block-navigation__submenu-container{
+        padding: 0 !important;
+    }
+
+    .wp-block-navigation__responsive-container-close{
+        margin: 4vh 5vw 0 0 !important;
     }
 }
