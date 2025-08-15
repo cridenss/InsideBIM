@@ -1,22 +1,11 @@
 :root {
-  --section-padding-s: 2vh 0;
-  --section-padding-m: 4vh 0;
-  --section-padding-l: 6vh 0;
-  --section-padding-xl: 10vh 0;
-
-  --container-padding: 4vh;
-  --section-spacing: clamp(1.5rem, 4vw, 4rem);
-  --content-gap: clamp(1rem, 3vw, 3rem);
-
   /* Couleurs */
   --cream: #fcfbf9;
   --green: #8C9C7C;
-  --orange:#ff3c0026;
+  --orange:#ffa51383;
   --light-green: #DBE0D5;
   --ocean-black: #232826;
-  --light-green_hover: #cfddc2;
   --light-grey: #9aa09b42;
-  --grey: #75727D;
   --dark-green-lighter: #58644e;
 
   /* Polices */
@@ -24,14 +13,6 @@
   --font-cunia: 'Cunia', Arial, sans-serif;
   --font-tiktok: "TikTok Sans", sans-serif;
 
-  /* Tailles */
-  --section-xs: 30vh;
-  --section-s: 40vh;
-  --section-m: 50vh;
-  --section-l: 70vh;
-  --section-xl: 80vh;
-
-  --cards-s_: 30vh;
 
   /* Espacement */
   --spacing-xs: 0.5rem;   /* 8px */
@@ -52,23 +33,7 @@
   --radius-button: 5px;
 
   /* Shadows */
-  --shadow: 0px 5px rgb(68, 78, 60, 0.8);
+  --shadow: 0 2px 5px 0 rgb(0, 0, 0, 0.1);
   --shadow-header: 0 2px 5px 0 rgb(0, 0, 0, 0.1);
   --shadow-button: 0 5px 5px rgb(0, 0, 0, 0.2);
-
-  /* Breakpoints */
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-xl: 1200px;
-
-
-
-  --font-size-xs: 1rem;
-  --font-size-s: 1.2rem;
-  --font-size-m: 2rem;
-  --font-size-l: 3rem;
-  --font-size-xl: 4rem;
-
-
 }

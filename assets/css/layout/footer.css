@@ -37,6 +37,15 @@ footer {
     gap: 1vw;
 }
 
+.footer-contact div a{
+    text-decoration: none;
+    color: var(--ocean-black);
+}
+
+.footer-contact div a:hover{
+    text-decoration: underline;
+}
+
 .footer-contact div figure{
     width: 30px;
     height: 30px;

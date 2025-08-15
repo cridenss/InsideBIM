@@ -35,6 +35,10 @@ header {
     transition: transform 0.3s ease;
 }
 
+.wp-block-navigation-item__label{
+    cursor: pointer !important;
+}
+
 
 /* Container du menu déroulant */
 .wp-block-navigation__submenu-container {

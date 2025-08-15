@@ -63,7 +63,6 @@
     z-index: -1;
 }
 
-/* Tablette et écrans moyens (jusqu'à 1023px) */
 @media (max-width: 1024px) {
     .articles {
         grid-template-columns: 50% 1fr;
@@ -73,7 +72,7 @@
     
     .article-card {
         gap: 2.5vh;
-        height: 40vh;
+        height: 35vh;
     }
 
     .article-card figure {
@@ -86,14 +85,11 @@
     }
 
     .article-card-content h4 {
-        font-size: 1.1em;
+        font-size: 1rem;
         margin-bottom: 0.5rem;
     }
 }
 
-
-
-/* Mobile (jusqu'à 767px) */
 @media (max-width: 767px) {
     .articles {
         grid-template-columns: 1fr;
@@ -105,7 +101,7 @@
     .article-card {
         min-width: 100%;
         gap: 2vh;
-        height: 50vh;
+        height: 40vh;
     }
 
     .article-card figure {

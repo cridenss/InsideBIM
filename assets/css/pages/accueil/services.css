@@ -25,8 +25,7 @@
   gap: var(--gap-cards);
   min-height: var(--cards-s);
   transition: transform 0.1s ease;
-  box-shadow: var(--shadow-cards);
-
+  box-shadow: var(--shadow);
 }
 
 .service-card p{

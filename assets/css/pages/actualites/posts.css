@@ -14,3 +14,15 @@
 
 .article-hero-image{
 }
+
+@media (max-width: 1023px) {
+  .template-blog-custom{
+    width: 70vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .template-blog-custom{
+    width: 80vw;
+  }
+}
